@@ -1,8 +1,25 @@
-<% provide(:title, "Home") %>
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+  <h1>Heading</h1>
+  <small>
+    Edit the text for the Heading under the call of method "h1" in the file "home.html.erb" in app/views/static_pages
+    To edit the size, color, and placement of the Heading, change the method "h1" in the custom.scss file.
+  </small>
+  <small>
+    To edit the subheading change the method "h2" instead in the same files.
+  </small>
+  <h2>
+    <!--This is the home page for the-->
+    <!--<a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application. -->
+    Subheading
+  </h2>
+  <!--<small>-->
+    
+  <!--</small>-->
+  <%= link_to "Sign up link button (located in \n \"home.html.erb\" file)", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
 
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),"https://rubyonrails.org/" %>
+
+<!--The following can be deleted when customizing the website. The purpose of the following code is to show the user
+how edit this page as part of the tutorial.-->
+<small>This logo can be edited in the "home.html.erb" file under app/views/static_pages.</small>
